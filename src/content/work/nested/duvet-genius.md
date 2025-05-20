@@ -1,22 +1,29 @@
 ---
-title: Duvet Genius
-publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+title: AF Risk Prediction
+publishDate: 2025-02-25 00:00:00
+img: /assets/hospital-heart.jpg
+img_alt: A heart with an arrow
 description: |
-  We developed a virtual showcase for the softest bedding imaginable.
+  Developed a web application that assesses the risk of Atrial Fibrillation using ECG signals and electronic health records. Integrated data processing, risk prediction models, and a user-friendly interface for clinical insights
 tags:
-  - Design
-  - Dev
-  - Branding
+  - Python
+  - XGBoost 
+  - BayesSearchCV
+  - User Interface
+  - Chatbot Implementation
+  - Health data Analysis and Modeling
+  - Interactive dashboard using Dash
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+This project focuses on predicting the risk of new-onset Atrial Fibrillation (AF) by integrating 12-lead ECG signal data with electronic health records (EHR). A robust machine learning pipeline was developed to analyze clinical and signal-derived features, leveraging the power of the XGBoost classifier to produce accurate and interpretable risk scores for AF. The ECG features combined with EHR data such as age, blood pressure, and comorbidities were used to build a comprehensive dataset.
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+To support model transparency and clinical interpretability, SHAP (SHapley Additive exPlanations) values were used to identify and visualize the contribution of each feature to the model's predictions. This enabled both clinicians and users to understand which health indicators most strongly influenced a patient’s AF risk, aligning with the principles of explainable AI in healthcare.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+Exploratory Data Analysis (EDA) was performed using Dash, a Python framework for building interactive web-based dashboards. This component allowed for dynamic visualization of patient demographics, comorbidity distributions, ECG-derived metrics, and correlations between variables—facilitating deeper insights into the data before modeling.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+The complete solution was deployed as an interactive web application using Streamlit. The app allows users to input health parameters and receive real-time AF risk predictions, accompanied by a SHAP-based breakdown of the most influential factors. This end-to-end tool combines clinical relevance, machine learning rigor, and user-friendly design, and is intended to assist healthcare providers and researchers in early identification and preventive care for atrial fibrillation.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+Also, the chatbot was built on top of the DeepSeek framework and has been customized to analyze and summarize patient information in a clinically meaningful way. It is designed not only to interpret distributions of key health indicators but also to extract relevant insights from patient data. Additionally, it is programmed to provide clear, contextual explanations and, when appropriate, offer preliminary recommendations or flag areas for further clinical review, making it a valuable tool for both data exploration and patient-specific interpretation.
+
+You can explore the deployed application here: [Atrial Fibrillation Risk Prediction App](https://atrialfibrillation-riskpred.streamlit.app/)
+GitHub Repository: [AF Risk Pred](https://github.com/i-archanasenthil/af_risk_prediction_using_ecg_and_ehr_data)

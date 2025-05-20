@@ -1,35 +1,49 @@
 ---
-title: Markdown Mystery Tour
+title: Natural Language Topic Modeling
 publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
+img: /assets/GOT.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  Applied Latent Dirichlet Allocation (LDA) to the A Song of Ice and Fire series to uncover hidden themes and character dynamics using natural language processing.
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - Topic Modeling (LDA)
+  - Natural Language Modeling
+  - Python
+  - Unsupervised Modeling
+  - NLTK, Spacy 
+  - Text Preprocessing
 ---
 
-## Level-two heading
+This natural language processing (NLP) project explores the rich narrative of George R.R. Martin’s A Song of Ice and Fire series by applying Latent Dirichlet Allocation (LDA) to identify underlying themes and topics. The objective is to analyze the textual data to discover patterns and associations that may not be immediately apparent, providing insights into character relationships, political intrigue, and thematic elements.
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
+**Key Steps Involved**
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+**Data Collection & Preprocessing**
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
+- Compiled text data from the A Song of Ice and Fire series.
 
-### Level-three heading
+- Performed preprocessing steps including tokenization, stopword removal, and normalization to prepare the text for analysis.
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
+**Topic Modeling with LDA**
 
-### Level-three heading
+- Utilized the LDA algorithm to model the corpus, identifying clusters of words that form coherent topics.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+- Adjusted the number of topics and hyperparameters to optimize model performance.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+**Topic Interpretation**
 
-#### Level-four heading
+- Analyzed the top keywords within each topic to assign meaningful labels.
 
-- We noted this
-- And also this other point
+- For example, a topic with keywords like "lord," "king," "sword," and "battle" was interpreted as relating to themes of power and warfare.
+
+**Visualization**
+
+- Generated visual representations of the topics and their distributions across the corpus to aid in interpretation.
+
+- Visualizations help in understanding how themes are spread throughout the series and how they relate to different characters and events.
+
+This project demonstrates the application of NLP techniques to literary analysis, offering a data-driven perspective on the complex world of Westeros. By uncovering latent themes, it provides a deeper understanding of the narrative structure and character development within the series.
+
+Feel free to explore the repository for more details and to view the visualizations generated during the analysis: [GitHub](https://github.com/i-archanasenthil/gameofthrone-ldatopicmodelling)
+
+A video demonstration of the LDA topic modeling : [Video Demo](https://github.com/i-archanasenthil/gameofthrone-ldatopicmodelling/blob/main/assets/LDA_Visual.mp4)

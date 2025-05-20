@@ -1,23 +1,30 @@
 ---
-title: Bloom Box
-publishDate: 2019-12-01 00:00:00
-img: /assets/stock-2.jpg
-img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+title: ChatBot Implementation
+publishDate: 2025-02-25 00:00:00
+img: /assets/chatbot_3.jpg
+img_alt: A chatbot in a blue background
 description: |
-  We paired with a cutting-edge music API and a team of horticulturalists
-  to build AI-generated playlists that maximize houseplant health.
+  This project leverages historical Alberta wildfire data to train and evaluate machine learning models that distinguish human-caused fires from natural ones. An interactive chatbot interface built with Streamlit allows users to query the dataset and receive real-time predictions and insights.
 tags:
-  - Dev
-  - Branding
-  - Backend
+  - Natural Language Processing
+  - User Interface (Streamlit)
+  - Python 
+  - DeepSeek
+  - API Integration and Handling
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+The GitHub repository [Alberta Wildfire Analysis and Chatbot](https://github.com/i-archanasenthil/alberta-wildfire-human-activity-classification-model) focuses on analyzing wildfire occurrences in Alberta, Canada, with an emphasis on understanding the role of human activity in fire ignition and developing classification models to distinguish between human-caused and natural wildfires.
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+The project encompasses several key tasks:
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+**Data Collection and Preprocessing:** Historical wildfire data from 2006 to 2024 was compiled, including attributes such as fire location, cause, and size. The data underwent cleaning and preprocessing to ensure quality and consistency.
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+**Exploratory Data Analysis (EDA):** EDA was conducted to identify patterns and trends in wildfire occurrences, with a particular focus on the distribution of human-caused versus natural fires across different regions and time periods in Alberta.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+**Feature Engineering:** Relevant features were engineered to enhance the predictive power of the models. This included transforming categorical variables, handling missing values, and selecting pertinent attributes that influence fire ignition causes.
+
+**Model Development and Evaluation:** Classification models were developed to predict the cause of wildfires. Various machine learning algorithms were employed, and their performance was evaluated using appropriate metrics to determine their effectiveness in distinguishing between human-caused and natural fires.
+
+**Visualization and Reporting:** The results of the analysis and modeling were visualized to provide intuitive insights into the factors influencing wildfire causes. A comprehensive report and presentation were prepared to summarize the findings and methodologies employed in the project [Medium](https://medium.com/@i.archanasenthil/exploring-wildfire-distribution-of-alberta-the-role-of-human-activity-and-fire-class-7476c21fd92a)
+
+A distinctive and interactive component of the project is the inclusion of a **custom-built chatbot**, designed to provide users with an accessible and intuitive interface to interact with the wildfire dataset and predictive model. Built using natural language processing (NLP) techniques, the chatbot allows users to ask questions or input wildfire-related parameters (such as month, region, or fire size), and it responds with information or predictions about the likely cause of a fire. This enhances the usability of the model, especially for non-technical users or stakeholders in wildfire management, by offering real-time feedback in plain language. The chatbot demonstrates the practical application of AI in public safety and environmental monitoring by translating complex analytical results into user-friendly dialogue. This feature also reflects the project's broader goal of integrating data science tools with decision-support systems for wildfire prevention and mitigation. [Ask the chatbot](https://archana-alberta-wildfire-chatbot.streamlit.app/)

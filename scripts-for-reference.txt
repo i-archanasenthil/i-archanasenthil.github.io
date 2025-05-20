@@ -1,0 +1,6 @@
+--for local development
+npm run dev
+
+--to see how server will render it
+npm run build
+npx serve dist

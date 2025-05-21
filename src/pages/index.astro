@@ -106,10 +106,20 @@ const projects = visibleSlugs
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Converge Mental Health Coalition','DataPost'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
+							[
+							{ name: 'Converge Mental Health Coalition', href: 'https://www.linkedin.com/posts/converge-mental-health_exploring-mental-health-through-data-thank-activity-7325890912314675200-Iklc' },
+							{ name: 'DataPost', href: 'https://www.linkedin.com/posts/datapost-yyc_exploring-mental-health-through-data-thank-activity-7325731094090133505-2aVy' }
+							].map((brand) => (
+							<li class="mention-card">
+								<a 
+									href={brand.href} 
+									target="_blank" 
+									rel="noopener noreferrer" 
+									class="block hover:underline"
+								>
+								{brand.name}
+								</a>
+							</li>
 							))
 						}
 					</Grid>

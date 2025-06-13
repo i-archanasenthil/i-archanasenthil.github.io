@@ -1,7 +1,7 @@
 ---
-title: Classification Techniques - PCA, XGBoost
+title: Wine Classification - PCA, XGBoost
 publishDate: 2025-02-25 00:00:00
-img: /assets/classification.jpg
+img: /assets/wine.jpg
 img_alt: A chatbot in a blue background
 description: |
   Developed a machine learning pipeline to classify wine types based on physicochemical properties, utilizing XGBoost for classification and Principal Component Analysis (PCA) for dimensionality reduction. The project includes data preprocessing, model training, evaluation, and visualization of results.

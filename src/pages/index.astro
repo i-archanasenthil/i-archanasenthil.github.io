@@ -111,9 +111,16 @@ const projects = visibleSlugs
 							{ name: 'DataPost', href: 'https://www.linkedin.com/posts/datapost-yyc_exploring-mental-health-through-data-thank-activity-7325731094090133505-2aVy' },
 							{ name: 'Tech Connect Alberta', href: 'https://www.linkedin.com/posts/tech-connectab_techconnectalberta-innovation-futureofwork-activity-7348416680437440513-cNiD?utm_source=share&utm_medium=member_desktop&rcm=ACoAACaalqQB9mCwZ5KaoS5Qw7EcNxnHUAiRses' }
 							].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
+							<li class="mention-card">
+								<a 
+									href={brand.href} 
+									target="_blank" 
+									rel="noopener noreferrer" 
+									class="block hover:underline"
+								>
+								{brand.name}
+								</a>
+							</li>
 							))
 						}
 					</Grid>
